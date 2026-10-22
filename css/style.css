@@ -1,0 +1,210 @@
+/* 背景 */
+body{
+    background-image: url(../images/650da5509194d.jpg);
+    background-size: 100%;
+    color: #fff;
+    background-attachment: fixed;
+    z-index: 1;}
+
+.star{
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+}
+.left{
+    width: 580px;
+}
+.right{
+    width: 540px;
+}
+.photo{
+    position: fixed;
+    right: 60px;
+    top: 180px;
+}
+.photo img{
+    width: 370px;
+    text-align: center;
+}
+
+/* ナビ */
+.nav_wrapper{
+    position: fixed;
+    width: 25%;
+    margin-top: 500px;
+    transform: translateY(-50%);
+    text-align: center;
+}
+.nav_list{
+    top: 50%;
+    transform: translateY(-50%);
+    right: calc((100% - 450px) / 4);
+    z-index: 5;
+    margin-left: 120px;
+}
+.nav_item:nth-child(1){
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 20px #0cc, 0 0 10px #0cc, 0 0 10px #0ff, 0 0 60px #0ff;
+    margin-top: 25px;
+}
+.nav_item:nth-child(2){
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 20px #E60013, 0 0 10px #E60013, 0 0 10px rgb(255, 0, 0), 0 0 60px rgb(255, 0, 0);
+    margin-top: 25px;
+}
+.nav_item:nth-child(3){
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 20px #EAC900, 0 0 10px #EAC900, 0 0 10px #ffdd00, 0 0 60px #ffdd00;
+    margin-top: 25px;
+}
+.nav_item:nth-child(4){
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 20px #DC027B, 0 0 10px #DC027B, 0 0 10px #ff008c, 0 0 60px #ff008c;
+    margin-top: 25px;
+}
+.nav_item:nth-child(5){
+    color: #fff;
+    text-shadow: 0 0 1px #fff, 0 0 20px #23AC39, 0 0 10px #23AC39, 0 0 10px #38ff59, 0 0 60px #38ff59;
+    margin-top: 25px;
+}
+.nav_item{
+    font-size: 20px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+}
+a{
+    padding: 20px 40px;
+    font-weight: 700;
+    color: #fff;
+}
+/* コンテンツ */
+h2{
+    font-size: 32px;
+    text-align: center;
+}
+.article{
+    max-width: 450px;
+    margin: 0 auto;
+    position: relative;
+    background-color: rgba(14,10,8,0.5);
+    color: #fff;
+}
+.logo{
+    width: 450px;
+}
+
+.section{
+    padding: 20px;
+    text-align: center;
+}
+#mini_game h2{
+    margin-top: 100px;
+}
+#access h2{
+    margin-top: 100px;
+}
+#concept p{
+    width: 335px;
+    font-size: 16px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+#mini_game p{
+    width: 335px;
+    font-size: 16px;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 45px;
+}
+#access p{
+    font-size: 16px;
+    text-align: center;
+    margin-top: 45px;
+}
+.game_img{
+    margin-top: 40px;
+    width: 335px;
+}
+.acces_img{
+    margin-top: 40px;
+    width: 335px;
+}
+
+/* メニュー */
+#menu h2{
+    margin-top: 100px;
+}
+#menu{
+    width: 335px;
+    text-align: center;
+    margin: 0 auto;
+}
+h3{
+    font-size: 20px;
+    margin-top: 40px;
+}
+.price{
+    font-size: 16px;
+    text-align: right;
+}
+.food{
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.food_item2{
+    margin-top: 20px;
+}
+.food_item2 p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+.drink{
+    width: 335px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 24px;
+    margin-bottom: 60px;
+}
+.drink_item2{
+    margin-top: 20px;
+}
+.drink_item2 p{
+    font-size: 16px;
+    text-align: left;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+/* フッター */
+footer{
+    background-color: #000;
+    text-align: center;
+}
+.copyright{
+    font-size: 14px;
+    padding: 20px;
+}
+
+/* レスポンシブ */
+@media screen and (max-width:600px) {
+    .star{
+        display: none;
+    }
+    .photo{
+        display: none;
+    }
+    body{
+        background-image: url(../images/sh_650da5509194d.png);
+    }
+    .article{
+        background-color: transparent;
+    }
+    .nav_wrapper{
+        display: none;
+    }
+}
